@@ -11,8 +11,8 @@ import (
 const (
 	NO_RETRY int = 6
 	// INIT_GASPRICE int64 = 1000000000 // 1gwei
-	INIT_GASPRICE int64 = 20000000000 // 20gwei
-	GASPRICE_STEP int64 = 20000000000 // 20gwei
+	INIT_GASPRICE int64 = 4000000000  // 4gwei
+	GASPRICE_STEP int64 = 15700000000 // 15.7gwei
 	NO_STEP       int   = 3
 	// TX_WAIT_TIME  uint64 = 10 // 10 seconds
 	TX_WAIT_TIME uint64 = 10 * 60 // 10 minutes

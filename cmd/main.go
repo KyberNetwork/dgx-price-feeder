@@ -69,7 +69,7 @@ func main() {
 		strings.TrimSpace(string(passphrase)),
 	)
 	feedCorpus := feed.NewFeedCorpus()
-	runner := runner.NewTickerRunner(45 * time.Minute)
+	runner := runner.NewTickerRunner(30 * time.Minute)
 	feeder := dgxpricing.NewPriceFeeder(runner, reserve, feedCorpus)
 	feeder.Run()
 }
