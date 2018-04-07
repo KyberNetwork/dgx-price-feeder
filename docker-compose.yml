@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  dgxfeeder:
+    image: dgx_price_feeder
+    build: .
+    ports:
+      - 7000:7000
+    volumes:
+      - .:/go/src/github.com/KyberNetwork/dgx-price-feeder
+    environment:
+      - KYBER_ENV=production
+    command: cmd
+
